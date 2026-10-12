@@ -8,12 +8,14 @@ class Solution:
         if not head:
             return head
 
-        dummy_head = ListNode()
         curr = head
         prev = None
-        while curr != None:
-            dummy_head.next = curr
-            curr = curr.next
-            dummy_head.next.next = prev
-            prev = dummy_head.next
-        return dummy_head.next
+
+        while curr:
+            next_node = curr.next
+            curr.next = prev
+            prev = curr
+            curr = next_node
+        return prev
+
+# O(n) time complexity, O(1) space complexity
