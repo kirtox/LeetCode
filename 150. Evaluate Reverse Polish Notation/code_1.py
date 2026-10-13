@@ -1,25 +1,25 @@
 class Solution:
     def evalRPN(self, tokens: list[str]) -> int:
         stack = []
-        op = ['+', '-', '*', '/']
+        op = {'+', '-', '*', '/'}
 
-        for ele in tokens:
-            if ele not in op:
-                stack.append(ele)
+        for token in tokens:
+            if token not in op:
+                stack.append(token)
             else:
                 num2 = int(stack.pop())
                 num1 = int(stack.pop())
-                # print(f"num1 ? num2 => {num1} {ele} {num2}")
-                if ele == '+':
-                    curr = num1 + num2
-                    stack.append(curr)
-                elif ele == '-':
-                    curr = num1 - num2
-                    stack.append(curr)
-                elif ele == '*':
-                    curr = num1 * num2
-                    stack.append(curr)
-                elif ele == '/':
-                    curr = num1 / num2
-                    stack.append(curr)
+
+                if token == '+':
+                    stack.append(num1 + num2)
+                elif token == '-':
+                    stack.append(num1 - num2)
+                elif token == '*':
+                    stack.append(num1 * num2)
+                elif token == '/':
+                    # stack.append(num1 // num2)
+                    
+                    stack.append(int(num1 / num2))
         return int(stack.pop())
+
+# O(n) time complexity, O(n) space complexity

@@ -38,9 +38,9 @@
 | 11 | 21 | Merge Two Sorted Lists | Easy | Linked List | ☑ | ☐ | Solved | 5m+ |  |
 | 12 | 206 | Reverse Linked List | Easy | Linked List | ☑ | ☐ | Solved | 7m+ |  |
 | 13 | 876 | Middle of the Linked List | Easy | Linked List | ☑ | ☑ | Solved | 3m+ |  |
-| 14 | 150 | Evaluate Reverse Polish Notation | Medium | Stack | ☐ | ☐ | Todo |  |  |
-| 15 | 704 | Binary Search | Easy | Binary Search | ☐ | ☐ | Todo |  |  |
-| 16 | 33 | Search in Rotated Sorted Array | Medium | Binary Search | ☐ | ☐ | Todo |  |  |
+| 14 | 150 | Evaluate Reverse Polish Notation | Medium | Stack | ☑ | ☐ | Solved | 13m+ | 忘記Python如何truncates toward zero |
+| 15 | 704 | Binary Search | Easy | Binary Search | ☑ | ☐ | Solved | 7m+ |  |
+| 16 | 33 | Search in Rotated Sorted Array | Medium | Binary Search | ☑ | ☑ | Stuck | 30m+ | 卡在怎麼區分左右part |
 | 17 | 104 | Maximum Depth of Binary Tree | Easy | Tree / DFS | ☐ | ☐ | Todo |  |  |
 | 18 | 226 | Invert Binary Tree | Easy | Tree / DFS | ☐ | ☐ | Todo |  |  |
 | 19 | 102 | Binary Tree Level Order Traversal | Medium | Tree / BFS | ☐ | ☐ | Todo |  |  |
