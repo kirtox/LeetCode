@@ -5,25 +5,13 @@
 #         self.next = next
 class Solution:
     def middleNode(self, head: ListNode | None) -> ListNode | None:
+        slow = head
+        fast = head
 
-        mapping = {}
+        while fast != None and fast.next != None:
+            slow = slow.next
+            fast = fast.next.next
+        
+        return slow
 
-        count = 0
-        while head != None:
-            curr = head
-            head = head.next
-            curr.next = None
-
-            mapping[count] = curr
-            count = count + 1
-
-        middle = len(mapping) // 2
-
-        dummy_head = ListNode()
-        curr = dummy_head
-        for i in range(middle, len(mapping)):
-            curr.next = mapping[i]
-            curr = curr.next
-        curr.next = None
-
-        return dummy_head.next
+# O(n) time complexity, O(1) space complexity
