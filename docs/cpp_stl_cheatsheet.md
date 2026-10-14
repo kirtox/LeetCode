@@ -23,6 +23,12 @@
 - 遍歷: `for (auto& [k, v] : m)` (C++17 結構化綁定)
 - 其他: `m.size()`, `m.empty()`
 
+## pair<T1, T2>
+- 初始化: `pair<int, int> p = {1, 2};` (大括號初始化), `pair<int, int> p = make_pair(1, 2);` (函式建立，型別可自動推導), `pair<int, int> p(1, 2);` (建構子初始化)
+- 新增/修改: 沒有新增/刪除操作（pair 本身是固定兩個欄位的值），直接賦值 `p.first = x;` / `p.second = y;` 或整個覆蓋 `p = {x, y};`
+- 查找/存取: `p.first`, `p.second` (直接存取兩個欄位), `auto [a, b] = p;` (C++17 結構化綁定，直接拆成兩個變數)
+- 其他: 支援比較運算子 (`<`, `==` 等，先比較 `first` 再比較 `second`，常用於 `sort(v.begin(), v.end())` 對 `vector<pair<...>>` 排序), 常用來取代 `unordered_map<K,V>` 存單一 key-value 配對（更輕量，沒有 hash 開銷），例如 `vector<pair<TreeNode*, int>> stack;`
+
 ## list<T> (雙向鏈表)
 - 新增: `l.push_back(x)` / `l.push_front(x)` (頭尾插入皆 O(1)), `l.insert(it, x)` (任意位置 O(1)，但找到 it 要 O(n))
 - 刪除: `l.pop_back()` / `l.pop_front()`, `l.erase(it)` (O(1)), `l.remove(x)` (刪除所有等於 x 的元素), `l.clear()`

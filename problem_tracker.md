@@ -41,8 +41,8 @@
 | 14 | 150 | Evaluate Reverse Polish Notation | Medium | Stack | ☑ | ☐ | Solved | 13m+ | 忘記Python如何truncates toward zero |
 | 15 | 704 | Binary Search | Easy | Binary Search | ☑ | ☐ | Solved | 7m+ |  |
 | 16 | 33 | Search in Rotated Sorted Array | Medium | Binary Search | ☑ | ☑ | Stuck | 30m+ | 卡在怎麼區分左右part |
-| 17 | 104 | Maximum Depth of Binary Tree | Easy | Tree / DFS | ☐ | ☐ | Todo |  |  |
-| 18 | 226 | Invert Binary Tree | Easy | Tree / DFS | ☐ | ☐ | Todo |  |  |
+| 17 | 104 | Maximum Depth of Binary Tree | Easy | Tree / DFS | ☑ | ☐ | Solved | 7m+ | 複習深度怎麼紀錄 / C++複習pair怎麼使用 |
+| 18 | 226 | Invert Binary Tree | Easy | Tree / DFS | ☑ | ☑ | Review | 10m+ | 不熟悉 |
 | 19 | 102 | Binary Tree Level Order Traversal | Medium | Tree / BFS | ☐ | ☐ | Todo |  |  |
 | 20 | 200 | Number of Islands | Medium | DFS / BFS | ☐ | ☐ | Todo |  |  |
 | 21 | 22 | Generate Parentheses | Medium | Backtracking | ☐ | ☐ | Todo |  |  |
