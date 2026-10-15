@@ -43,7 +43,7 @@
 | 16 | 33 | Search in Rotated Sorted Array | Medium | Binary Search | ☑ | ☑ | Stuck | 30m+ | 卡在怎麼區分左右part |
 | 17 | 104 | Maximum Depth of Binary Tree | Easy | Tree / DFS | ☑ | ☐ | Solved | 7m+ | 複習深度怎麼紀錄 / C++複習pair怎麼使用 |
 | 18 | 226 | Invert Binary Tree | Easy | Tree / DFS | ☑ | ☑ | Review | 10m+ | 不熟悉 |
-| 19 | 102 | Binary Tree Level Order Traversal | Medium | Tree / BFS | ☐ | ☐ | Todo |  |  |
+| 19 | 102 | Binary Tree Level Order Traversal | Medium | Tree / BFS | ☑ | ☑ | Review | 11m+ | 一開始用了DFS做 雖然AC 但還要嘗試BFS! |
 | 20 | 200 | Number of Islands | Medium | DFS / BFS | ☐ | ☐ | Todo |  |  |
 | 21 | 22 | Generate Parentheses | Medium | Backtracking | ☐ | ☐ | Todo |  |  |
 | 22 | 46 | Permutations | Medium | Backtracking | ☐ | ☐ | Todo |  |  |
