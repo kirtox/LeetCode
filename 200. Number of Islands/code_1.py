@@ -1,35 +1,31 @@
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
-        count = 0
+        res = 0
 
-        def dfs(i, j):
+        def dfs(r, c):
+            if grid[r][c] == "1":
+                grid[r][c] = "0"
+            else:
+                return
             # up
-            if i-1 >= 0:
-                if grid[i-1][j] == "1":
-                    grid[i-1][j] = "0"
-                    dfs(i-1, j)
+            if r > 0:
+                dfs(r - 1, c)
             # down
-            if i+1 < len(grid):
-                if grid[i+1][j] == "1":
-                    grid[i+1][j] = "0"
-                    dfs(i+1, j)
+            if r < len(grid) - 1:
+                dfs(r + 1, c)
             # left
-            if j-1 >= 0:
-                if grid[i][j-1] == "1":
-                    grid[i][j-1] = "0"
-                    dfs(i, j-1)
-
+            if c > 0:
+                dfs(r, c - 1)
             # right
-            if j+1 < len(grid[0]):
-                if grid[i][j+1] == "1":
-                    grid[i][j+1] = "0"
-                    dfs(i, j+1)
+            if c < len(grid[r]) - 1:
+                dfs(r, c + 1)
 
-        for i in range(len(grid)):
-            for j in range(len(grid[i])):
-                if grid[i][j] == "1":
-                    grid[i][j] == "0"
-                    count += 1
-                    dfs(i, j)
+        for r in range(len(grid)):
+            for c in range(len(grid[r])):
+                if grid[r][c] == "1":
+                    res += 1
+                    dfs(r, c)
 
-        return count
+        return res
+
+# O(m * n) time complexity, O(m * n) space complexity (due to recursion stack)

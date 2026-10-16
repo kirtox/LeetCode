@@ -44,7 +44,7 @@
 | 17 | 104 | Maximum Depth of Binary Tree | Easy | Tree / DFS | ☑ | ☐ | Solved | 7m+ | 複習深度怎麼紀錄 / C++複習pair怎麼使用 |
 | 18 | 226 | Invert Binary Tree | Easy | Tree / DFS | ☑ | ☑ | Review | 10m+ | 不熟悉 |
 | 19 | 102 | Binary Tree Level Order Traversal | Medium | Tree / BFS | ☑ | ☑ | Review | 11m+ | DFS + Stack, BFS + deque/queue are ACs. |
-| 20 | 200 | Number of Islands | Medium | DFS / BFS | ☐ | ☐ | Todo |  |  |
+| 20 | 200 | Number of Islands | Medium | DFS / BFS | ☑ | ☑ | Review | 15m+ | 建DFS小小卡 |
 | 21 | 22 | Generate Parentheses | Medium | Backtracking | ☐ | ☐ | Todo |  |  |
 | 22 | 46 | Permutations | Medium | Backtracking | ☐ | ☐ | Todo |  |  |
 
