@@ -45,7 +45,7 @@
 | 18 | 226 | Invert Binary Tree | Easy | Tree / DFS | ☑ | ☑ | Review | 10m+ | 不熟悉 |
 | 19 | 102 | Binary Tree Level Order Traversal | Medium | Tree / BFS | ☑ | ☑ | Review | 11m+ | DFS + Stack, BFS + deque/queue are ACs. |
 | 20 | 200 | Number of Islands | Medium | DFS / BFS | ☑ | ☑ | Review | 15m+ | 建DFS小小卡 |
-| 21 | 22 | Generate Parentheses | Medium | Backtracking | ☐ | ☐ | Todo |  |  |
+| 21 | 22 | Generate Parentheses | Medium | Backtracking | ☑ | ☑ | Review | 20m+ | backtracking input 沒設計好 所以卡小bug |
 | 22 | 46 | Permutations | Medium | Backtracking | ☐ | ☐ | Todo |  |  |
 
 ## 11 月
